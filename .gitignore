@@ -1,0 +1,6 @@
+# Ignore data and results directories
+Bind-N-Seq_BindingPotentialAnalysis/data/**
+Bind-N-Seq_BindingPotentialAnalysis/results/**
+
+RandomForestModel/data/**
+RandomForestModel/results/**
