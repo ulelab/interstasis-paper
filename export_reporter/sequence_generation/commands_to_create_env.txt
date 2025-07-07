@@ -1,0 +1,14 @@
+conda env create -f spliceai-jupyter.yaml
+ 
+conda activate spliceai-jupyter
+ 
+python -m ipykernel install --user --name=spliceai-jupyter
+ 
+python3 -m remote_ikernel manage --add \
+    --kernel_cmd="ml purge && ml CUDA && ml cuDNN && conda activate spliceai-jupyter && ipython3 kernel -f {connection_file}" \
+    --name="spliceai-jupyter" \
+    --interface=local \
+    --workdir="~/" \
+    --language=python3
+ 
+conda deactivate

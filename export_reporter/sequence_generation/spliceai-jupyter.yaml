@@ -1,0 +1,13 @@
+name: spliceai-jupyter
+channels:
+ - conda-forge
+ - bioconda
+ - defaults
+dependencies:
+ - python=3.9
+ - pip
+ - pip:
+   - remote-ikernel
+   - ipykernel
+   - spliceai
+   - tensorflow
