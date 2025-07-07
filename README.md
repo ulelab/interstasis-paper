@@ -3,11 +3,6 @@ A repository containing the code for Faraway et al. (2025).
 
 The GeRM package, used in this work to score Generalised RNA Multivalency, is available at: [https://github.com/ulelab/germ](https://github.com/ulelab/germ).
 
-The code for computing the binding potential of RBPs based on *in vitro* motifs is available in **Bind-N-Seq_BindingPotentialAnalysis/**.  
-Input data and output files are deposited on [Zenodo](https://doi.org/10.5281/zenodo.15682421) due to their large size.
-
-The code for training a random forest model to predict nuclear retention of endogenous transcripts upon induction of R-MCD is available in **RandomForestModel/**.  
-Input data and output files are deposited on [Zenodo](https://doi.org/10.5281/zenodo.15682421) due to their large size.
 
 ## GeRM analysis
 - create_germ_table.r
@@ -112,6 +107,14 @@ Input data and output files are deposited on [Zenodo](https://doi.org/10.5281/ze
   - Parsing the raw sequencing reads to extract the unique barcodes. Deduplicating reads based on UMIs. In this experiment, the reporter expression was induced for 4, 8 or 12 hours from a polyclonal pool with PiggyBac integration of the plasmid pool.
 - second_transfection_analysis.R
   - Analysis of the barcodes in the sequencing experiment by relating them to the gene structures in the plasmid pool. In this experiment, the plasmid pool was transiently transfected, and RNA was harvested after 8 or 24 hours.
+ 
+## Bind-N-Seq Analysis 
+The code for computing the binding potential of RBPs based on *in vitro* motifs is available in **Bind-N-Seq_BindingPotentialAnalysis/**.  
+Input data and output files are deposited on [Zenodo](https://doi.org/10.5281/zenodo.15682421) due to their large size.
+
+## Random Forest Modelling
+The code for training a random forest model to predict nuclear retention of endogenous transcripts upon induction of R-MCD is available in **RandomForestModel/**.  
+Input data and output files are deposited on [Zenodo](https://doi.org/10.5281/zenodo.15682421) due to their large size.
 - second_transfection_barcode_parsing.r
   - Parsing the raw sequencing reads to extract the unique barcodes. Deduplicating reads based on UMIs. In this experiment, the plasmid pool was transiently transfected, and RNA was harvested after 8 or 24 hours.- 
 
