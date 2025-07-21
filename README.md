@@ -45,8 +45,6 @@ The GeRM package, used in this work to score Generalised RNA Multivalency, is av
   - Assessing whether CLIP crosslinks are more likely to fall in k-mers when they have relatively high or low GeRM scores. Used to identify RBPs that prefer to bind to motifs in multivalent contexts (these datasets are subsequently used to look at binding in GeRM - subtypes).
 - crosslinks_within_germs_clusters.r
   - Looking at enrichments of CLIP crosslinks within different GeRM regions relative to the rest of the CDS, then plotting heatmaps.
-- WHERE IS THE TRA2B iCLIP ANALYSIS?
-- WHERE IS THE VASTDB CODE?
 ## Transcriptomics
 - deseq_ppig_3prime_end.r
   - Perform DESeq2 analysis on the 3’ end data from PPIG overexpression timecourse. Write out summary tables.
@@ -54,6 +52,13 @@ The GeRM package, used in this work to score Generalised RNA Multivalency, is av
   - Perform DESeq2 analysis on the 3’ end data from CLK inhibition with CLK-IN-T3. Write out summary tables. Also, perform gene ontology analysis.
 - germs_metrics_for_classifying_response.r
   - Analyse DESeq2 output from PPIG overexpression and CLK inhibition with respect to various GeRM properties of transcripts. Perform gene ontology analysis on the transcripts differentially localised upon dox induction. Analyse the coding content of those - differentially localised transcripts.
+### CLIP analysis
+- clip_in_germ_regions.r
+  - Metaprofiles of CLIP crosslinks within different GeRM region clusters.
+- percentage_crosslinks_spliced.r
+  - The percentage of crosslinks near 5' splice sites that cross the splice junction (evidence of binding after splicing).
+- regional_binding_iclip.R
+  - Calculate the proportion of iCLIP crosslinks falling in different regions of the genome.
 ## Image analysis
 - smfish_of_ppig_overexpression.cpproj
   - CellProfiler pipeline to analyse smFISH signal in nuclear speckles after PPIG overexpression.
@@ -107,6 +112,9 @@ The GeRM package, used in this work to score Generalised RNA Multivalency, is av
   - Parsing the raw sequencing reads to extract the unique barcodes. Deduplicating reads based on UMIs. In this experiment, the reporter expression was induced for 4, 8 or 12 hours from a polyclonal pool with PiggyBac integration of the plasmid pool.
 - second_transfection_analysis.R
   - Analysis of the barcodes in the sequencing experiment by relating them to the gene structures in the plasmid pool. In this experiment, the plasmid pool was transiently transfected, and RNA was harvested after 8 or 24 hours.
+## Proteomics
+- analysis_of_silac_data.r
+  - Analyse the impact of PPIG overexpression on nascent translation. Analyse the proportion of the proteome and proportion of total R-MCDs accounted for by overexpressed PPIG.
  
 ## Bind-N-Seq Analysis 
 - The code for computing the binding potential of RBPs based on *in vitro* motifs is available in **Bind-N-Seq_BindingPotentialAnalysis/**.  
