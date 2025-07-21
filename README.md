@@ -40,7 +40,7 @@ The GeRM package, used in this work to score Generalised RNA Multivalency, is av
 - er_interaction_retained_protein_properties.r
   - Analysis of the properties of the proteins encoded by transcripts that are retained in the nucleus following PPIG expression.
 - are_germ_exons_spliced.r
-  - Analysis of where exons that host GeRM sequences are subject to alternative splicing after TRA2 knockdown.
+  - Analysis of where exons that host GeRM sequences are subject to alternative splicing after TRA2 knockdown or are alternatively spliced across different tissues.
 - multivalency_preference_of_clip_xlinks.r
   - Assessing whether CLIP crosslinks are more likely to fall in k-mers when they have relatively high or low GeRM scores. Used to identify RBPs that prefer to bind to motifs in multivalent contexts (these datasets are subsequently used to look at binding in GeRM - subtypes).
 - crosslinks_within_germs_clusters.r
